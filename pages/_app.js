@@ -6,13 +6,13 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-`
+`;
 
 const theme = {
   colors: {
     primary: '#0070f3',
   },
-}
+};
 
 export default function App({ Component, pageProps }) {
   return (
@@ -22,5 +22,5 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </ThemeProvider>
     </>
-  )
+  );
 }
