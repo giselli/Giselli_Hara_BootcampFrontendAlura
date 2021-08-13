@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const CapaSite = styled.div`
 height: 100vh;
-color: ${({ theme }) => theme.colors.black};
+color: #000000;
 font-family: 'Fira Sans Condensed', sans-serif;
 text-align: center;
 position: relative;
@@ -31,9 +31,6 @@ font-size: 48px;
 margin: 0;
 }
 `
-
-
-
 
 export default function Capa() {
   return (

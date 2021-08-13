@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const LogoWrapper = styled.div`
-background-color: ${({ theme }) => theme.colors.primary.main.color};
+background-color: #0000FF;
 width: fit-content;
 height: 100%;
 `;

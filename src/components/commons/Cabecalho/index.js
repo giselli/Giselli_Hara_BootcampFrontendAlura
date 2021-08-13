@@ -8,8 +8,8 @@ width: 100%;
 height: 67px;
 display: flex;
 justify-content: space-around;
-background-color: ${({ theme }) => theme.colors.secondary.main.color};
-border-top: 1px solid ${({ theme }) => theme.colors.primary.main.color};
+background-color: #EEEEEE;
+border-top: 1px solid #CCCCCC;
 `
 
 export default function Cabecalho() {
