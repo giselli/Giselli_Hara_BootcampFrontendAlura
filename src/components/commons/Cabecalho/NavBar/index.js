@@ -5,6 +5,7 @@ const NavWrapper = styled.nav`
   display: flex;
   justify-content: flex-end;
   gap: 38px;
+  font-size: 32px;
 `;
 
 const NavBar = () => (

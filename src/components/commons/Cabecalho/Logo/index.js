@@ -3,14 +3,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 const LogoWrapper = styled.div`
-background-color: #0000FF;
+background-color: #EEEEEE;
 width: fit-content;
 height: 100%;
+font-size: 32px;
 `;
 
 const Logo = () => (
 <LogoWrapper>
-<a href='/'>&lt;me /&gt;</a>
+<a href='/'>&lt;ME /&gt;</a>
 </LogoWrapper>
 );
 

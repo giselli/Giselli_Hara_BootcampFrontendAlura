@@ -3,8 +3,8 @@ import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
 
 const CardWrapper = styled.div`
-  height: ${props => (props.featured ? '320px' : '450px')};
-  width: ${props => (props.featured ? '900px' : '288px')};
+  height: ${props => '450px'};
+  width: ${props => '288px'};
   border: 1px solid ${({ theme }) => theme.colors.borders.color};
   box-sizing: border-box;
   margin-bottom: 30px;
@@ -14,8 +14,8 @@ const CardWrapper = styled.div`
 `
 
 const CardImageWrapper = styled.div`
-  width: ${props => (props.featured ? '592px' : '286px')};
-  height: ${props => (props.featured ? '318px' : '390px')};
+  width: ${props => '286px'};
+  height: ${props => '390px'};
   background-image: url(${props => props.image || 'https://placeholder.com/287x390'});
   background-position: center;
   background-repeat: no-repeat;
@@ -39,7 +39,7 @@ const CardImageWrapper = styled.div`
   }
 `
 const CardTitleWrapper = styled.div`
-  height: ${props => (props.featured ? '129px' : '60px')};
+  height: ${props => '60px'};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,21 +50,25 @@ const CardTitleWrapper = styled.div`
     font-family: 'Fira Sans Condensed';
     font-style: normal;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 24px;
     color: #000000;
   }
 `
+
+
 export default function Card(props) {
-    const { image, title, text, featured } = props
+    const { image, title, text, url, featured } = props
     return (
         <>
         <CardWrapper featured={featured}>
+            <a href={url}>
             <CardImageWrapper image={image} featured={featured}>
                 <div>{text}</div>
             </CardImageWrapper>
             <CardTitleWrapper featured={featured}>
                 <h2>{title}</h2>
             </CardTitleWrapper>
+            </a>
         </CardWrapper>
       </>
     )
@@ -74,6 +78,7 @@ Card.propTypes = {
     image: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     text: PropTypes.string,
+    url: PropTypes.string.isRequired,
   }
   
   Card.defaultProps = {

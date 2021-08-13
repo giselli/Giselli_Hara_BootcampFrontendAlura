@@ -5,7 +5,7 @@ import Card from '../src/components/commons/Card';
 import SectionTitle from '../src/components/commons/SectionTitle';
 import Footer from '../src/components/commons/Footer';
 import ProjectsWrapper from '../src/components/foundation/layout/ProjectsWrapper';
-import CardContainer from '../src/components/commons/CardContainer';
+
 
 export default function Home() {
   return (
