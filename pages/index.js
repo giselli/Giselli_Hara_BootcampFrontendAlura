@@ -5,6 +5,7 @@ import Card from '../src/components/commons/Card';
 import SectionTitle from '../src/components/commons/SectionTitle';
 import Footer from '../src/components/commons/Footer';
 import ProjectsWrapper from '../src/components/foundation/layout/ProjectsWrapper';
+import CardContainer from '../src/components/commons/CardContainer';
 
 export default function Home() {
   return (
@@ -14,24 +15,26 @@ export default function Home() {
       <ProjectsWrapper.Container>
         <SectionTitle title='Meus Projetos' />
         <ProjectsWrapper.Row>
+         
           <Card
             image='images/image1.png'
-		    url='https://gi.dev.br'
+		        url='https://gi.dev.br'
             title='Página Pessoal'
-            featured={false}
+            
           />
           <Card
             image='images/image2.png'
             url='https://giselli.dev/'
             title='Meu blog'
-            featured={false}
+            
           />
           <Card
             image='images/image3.png'
             title='Alurakut - clone do Orkut'
             url='https://alurakut-three-jet.vercel.app/'
-            featured={false}
+
           />
+          
         </ProjectsWrapper.Row>
        </ProjectsWrapper.Container>
       <Footer />
