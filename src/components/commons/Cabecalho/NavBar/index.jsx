@@ -9,10 +9,10 @@ const NavWrapper = styled.nav`
  `;
 
 const NavBar = () => (
-    <NavWrapper>
-        <a href='https://gi.dev.br'>Sobre Mim</a>
-        <a href='mailto:gi@hara.ninja'>Contato</a>
-    </NavWrapper>
+  <NavWrapper>
+    <a href="https://gi.dev.br">Sobre Mim</a>
+    <a href="mailto:gi@hara.ninja">Contato</a>
+  </NavWrapper>
 );
 
 export default NavBar;
