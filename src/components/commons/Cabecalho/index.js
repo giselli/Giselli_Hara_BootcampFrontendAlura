@@ -10,6 +10,7 @@ display: flex;
 justify-content: space-around;
 background-color: #EEEEEE;
 border-top: 1px solid #CCCCCC;
+text-decoration: none;
 `
 
 export default function Cabecalho() {

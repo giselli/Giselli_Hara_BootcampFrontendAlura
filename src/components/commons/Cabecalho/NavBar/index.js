@@ -6,12 +6,12 @@ const NavWrapper = styled.nav`
   justify-content: flex-end;
   gap: 38px;
   font-size: 32px;
-`;
+ `;
 
 const NavBar = () => (
     <NavWrapper>
-        <a href='/sobre'>Sobre Mim</a>
-        <a href='/contato'>Contato</a>
+        <a href='https://gi.dev.br'>Sobre Mim</a>
+        <a href='mailto:gi@hara.ninja'>Contato</a>
     </NavWrapper>
 );
 

@@ -15,7 +15,6 @@ export default function Home() {
       <ProjectsWrapper.Container>
         <SectionTitle title='Meus Projetos' />
         <ProjectsWrapper.Row>
-         
           <Card
             image='images/image1.png'
 		        url='https://gi.dev.br'
@@ -32,9 +31,7 @@ export default function Home() {
             image='images/image3.png'
             title='Alurakut - clone do Orkut'
             url='https://alurakut-three-jet.vercel.app/'
-
           />
-          
         </ProjectsWrapper.Row>
        </ProjectsWrapper.Container>
       <Footer />
