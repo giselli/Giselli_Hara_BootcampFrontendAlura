@@ -6,36 +6,32 @@ import SectionTitle from '../src/components/commons/SectionTitle';
 import Footer from '../src/components/commons/Footer';
 import ProjectsWrapper from '../src/components/foundation/layout/ProjectsWrapper';
 
-
 export default function Home() {
   return (
-    <section id='main'>
+    <section id="main">
       <Capa />
       <Cabecalho />
       <ProjectsWrapper.Container>
-        <SectionTitle title='Meus Projetos' />
+        <SectionTitle title="Meus Projetos" />
         <ProjectsWrapper.Row>
           <Card
-            image='images/image1.png'
-		        url='https://gi.dev.br'
-            title='Página Pessoal'
-            
+            image="images/image1.png"
+            url="https://gi.dev.br"
+            title="Página Pessoal"
           />
           <Card
-            image='images/image2.png'
-            url='https://giselli.dev/'
-            title='Meu blog'
-            
+            image="images/image2.png"
+            url="https://giselli.dev/"
+            title="Meu blog"
           />
           <Card
-            image='images/image3.png'
-            title='Alurakut - clone do Orkut'
-            url='https://alurakut-three-jet.vercel.app/'
+            image="images/image3.png"
+            title="Alurakut - clone do Orkut"
+            url="https://alurakut-three-jet.vercel.app/"
           />
         </ProjectsWrapper.Row>
-       </ProjectsWrapper.Container>
+      </ProjectsWrapper.Container>
       <Footer />
     </section>
-  )
+  );
 }
-
