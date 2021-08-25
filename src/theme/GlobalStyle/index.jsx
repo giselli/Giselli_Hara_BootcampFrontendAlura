@@ -24,6 +24,11 @@ flex: 1;
 display: flex;
 flex-direction: column;
 }
+
+.mim {
+    color: #000000;
+    text-decoration: none;
+}
 `;
 
 export default GlobalStyle;

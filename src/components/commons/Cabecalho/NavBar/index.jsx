@@ -5,13 +5,13 @@ const NavWrapper = styled.nav`
   display: flex;
   justify-content: flex-end;
   gap: 38px;
-  font-size: 32px;
+  font-size: 36px;
  `;
 
 const NavBar = () => (
   <NavWrapper>
-    <a href="https://gi.dev.br">Sobre Mim</a>
-    <a href="mailto:gi@hara.ninja">Contato</a>
+    <a href="https://gi.dev.br" className="mim">Sobre Mim</a>
+    <a href="mailto:gi@hara.ninja" className="mim">Contato</a>
   </NavWrapper>
 );
 

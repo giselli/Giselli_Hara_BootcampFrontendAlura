@@ -10,7 +10,7 @@ font-size: 32px;
 
 const Logo = () => (
   <LogoWrapper>
-    <a href="/">&lt;ME /&gt;</a>
+    <a href="/" className="mim">&lt;ME /&gt;</a>
   </LogoWrapper>
 );
 
