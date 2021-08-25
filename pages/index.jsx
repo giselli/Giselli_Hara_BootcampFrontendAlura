@@ -32,21 +32,23 @@ export default function Home() {
               url="https://alurakut-three-jet.vercel.app/"
             />
           </ProjectsWrapper.Row>
-          <Button
-            variant="primary.main"
-            margin={{
-              xs: 'auto',
-              md: 'initial',
-            }}
-            display="block"
-            onClick={() => {
-              // isModalOpen = true;
-              setModalState(!isModalOpen);
-              // mudando o estado quando o botão é clicado
-            }}
-          >
+          <ProjectsWrapper.Row>
+            <Button
+              variant="primary.main"
+              margin={{
+                xs: 'auto',
+                md: 'initial',
+              }}
+              display="block"
+              onClick={() => {
+                // isModalOpen = true;
+                setModalState(!isModalOpen);
+                // mudando o estado quando o botão é clicado
+              }}
+            >
             Entre em contato
           </Button>
+          </ProjectsWrapper.Row>
         </ProjectsWrapper.Container>
         <Footer />
       </section>
